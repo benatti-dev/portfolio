@@ -1,0 +1,99 @@
+{
+  "Header.Item1": "About me",
+  "Header.Item2": "Experience",
+  "Header.Item3": "Projects",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "Oleh_Sunytsia_CV.pdf",
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Description": "I am a Full-Stack Engineer with over <span class='underline'>4+ years of experience</span> building high-reliability web applications and enterprise systems, with a strong focus on the <span class='underline'>MedTech domain</span>. On the <span class='underline'>frontend</span>, I specialize in creating responsive, data-driven interfaces using <span class='underline'>Angular</span> and reactive patterns. On the <span class='underline'>backend</span>, I develop secure and high-performance systems using <span class='underline'>Java and Spring Boot</span>, and have hands-on experience migrating legacy monoliths into <span class='underline'>Dockerized microservices</span>. My focus is on writing clean, maintainable code while ensuring strict compliance with industry standards and business goals.",
+  "Banner.ActionBtn": "Get in touch",
+  "AboutMe.Title": "About me",
+  "AboutMe.Paragraphs": [
+    "With over <span class='underline'>4+ years of experience</span> as a Full-Stack Engineer, I have worked across the full software development lifecycle-from writing <span class='underline'>unit tests</span> and driving continuous <span class='underline'>Code Reviews</span> to building scalable backend systems with <span class='underline'>Java, Spring Boot, PostgreSQL, and MySQL</span>. My journey in Medical Technology has taught me to highly value precision, data security, and system reliability.",
+    "I specialize in creating efficient solutions by <span class='underline'>optimizing database performance</span>, refactoring legacy architecture, and delivering clean, reusable code. My expertise spans building dynamic UIs with <span class='underline'>Angular</span> as well as developing robust <span class='underline'>microservices</span>, complemented by experience in <span class='underline'>Docker</span> containerization and a proven track record of <span class='underline'>mentoring junior developers</span>."
+  ],
+  "Experience.Title": "Experience",
+  "Experience.Jobs": [
+    {
+      "Tab": "ISD",
+      "Title": "Full-Stack Software Engineer",
+      "Date": "November 2022 - Present",
+      "Description": [
+        "Developing robust backend services using Java 17+, Spring Boot, Spring MVC, and JDBC (JdbcTemplate) in the MedTech domain.",
+        "Working closely with high-load Oracle databases, writing performant SQL queries, and analyzing execution plans to optimize data processing.",
+        "Designing and implementing complex client-side Angular modules featuring Reactive Forms and advanced dynamic validation logic.",
+        "Participating in microservices architecture design, ensuring the delivery of clean, modular, maintainable, and highly testable code.",
+        "Conducting comprehensive code reviews, reviewing technical solutions, and mentoring junior and trainee developers to improve team code quality.",
+        "Utilizing GitLab, TeamCity, SonarQube, Jira, and Postman within the daily CI/CD and agile development workflow."
+      ]
+    },
+    {
+      "Tab": "Your Company?",
+      "Title": "Full-Stack Software Engineer (Middle / Senior)",
+      "Date": "Future",
+      "Description": [
+        "This could be your company! I am ready to bring my strong expertise in Java, Spring Boot, and Angular to your team.",
+        "I can help build and scale your web applications, design secure RESTful APIs, and modernize legacy systems into efficient microservices.",
+        "Ready to optimize your database performance, write clean, maintainable code, and implement reliable frontend solutions using reactive patterns.",
+        "Excited to participate in rigorous Code Reviews, share knowledge, and mentor team members to foster technical growth and engineering culture.",
+        "Open to discussing how my experience in high-reliability domains can deliver value and align perfectly with your business goals."
+      ]
+    }
+  ],
+  "FeatureProjects.Title": "Projects that I was a part of",
+  "FeatureProjects.Label": "Featured Project",
+  "FeatureProjects.Projects": [
+    {
+      "Title": "ISD (Laboratory Information System)",
+      "Description": "An Enterprise-grade Laboratory Information System (LIS) designed to automate clinical laboratory workflows. Contributed as a Fullstack Developer, building robust <span class='underline'>RESTful APIs and microservices</span> on the backend, and creating reactive, user-friendly interfaces for <span class='underline'>medical data processing</span> on the frontend.",
+      "imgs": [
+        "assets/images/isd/LIS-System.webp"
+      ],
+      "Technologies": [
+        "Java",
+        "Spring Boot",
+        "Angular",
+        "TypeScript",
+        "REST API",
+        "RxJS"
+      ]
+    }
+  ],
+  "OtherProjects.Title": "More personal projects",
+  "OtherProjects.Projects": [
+    {
+      "Title": "Spring Auth Starter",
+      "Description": "A ready-to-use Spring Boot authentication library that provides JWT-based login, logout, token refresh, and validation out of the box. Designed as a reusable starter to integrate secure authentication into any Spring Boot project with minimal configuration.",
+      "ghLink": "https://github.com/benatti-dev/spring-auth-starter",
+      "Technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "JWT"
+      ]
+    },
+    {
+      "Title": "ng-auth-lib",
+      "Description": "An Angular library that seamlessly integrates with Spring Auth Starter. Provides interceptors, guards, and services for JWT token management, automatic token refresh, and route protection — ready to drop into any Angular project.",
+      "ghLink": "https://github.com/benatti-dev/spring-auth-starter",
+      "Technologies": [
+        "Angular",
+        "TypeScript",
+        "RxJS",
+        "JWT"
+      ]
+    },
+    {
+      "Title": "Placeholder",
+      "Description": "",
+      "ghLink": "https://github.com/benatti-dev",
+      "demoLink": "",
+      "Technologies": []
+    }
+  ],
+  "Contact.Pretitle": "What’s Next",
+  "Contact.Title": "Get in touch!",
+  "Contact.Content": "I will be happy to receive your contact if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message. Simple one-page design that features a profile letter with basic information about a person.",
+  "Contact.Btn": "Say Hello"
+}
