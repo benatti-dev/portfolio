@@ -21,14 +21,12 @@ export class AppComponent implements OnInit {
 
     this.languageService.initLanguage()
 
-    this.titleService.setTitle("Oleh Sunytsia | MEAN Stack Developer | MERN Stack Developer | Software Engineer");
+    this.titleService.setTitle("Oleh Sunytsia | Java Angular Full-Stack Developer | Software Engineer");
     this.metaService.addTags([
-      { name: 'keywords', content: 'Frontend, MEAN Stack Developer , MERN Stack Development , Software Engineer, software, developer' },
-      { name: 'description', content: 'As a software engineer with expertise in both MEAN and MERN stacks, I have a comprehensive understanding of full-stack web development. My strong foundation in JavaScript allows me to effectively work with front-end technologies such as Angular and React, as well as back-end technologies such as Node.js and Express.' },
+      { name: 'keywords', content: 'Java, Spring Boot, Angular, Full-Stack Developer, Software Engineer, MedTech, Microservices, Docker, TypeScript, PostgreSQL, Oracle' },
+      { name: 'description', content: 'Full-Stack Software Engineer with 4+ years of experience in Java, Spring Boot, and Angular. Specialized in MedTech domain, microservices architecture, Oracle databases, and building high-reliability enterprise web applications.' },
     ]);
     
     AOS.init();
-
-
   }
 }

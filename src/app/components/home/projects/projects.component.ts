@@ -3,11 +3,11 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 
 @Component({
-  selector: 'app-proyects',
-  templateUrl: './proyects.component.html',
-  styleUrls: ['./proyects.component.scss']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
-export class ProyectsComponent {
+export class projectsComponent {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
