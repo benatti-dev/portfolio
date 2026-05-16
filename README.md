@@ -2,7 +2,7 @@
 
 Personal portfolio website built with **Angular 13**, showcasing professional experience, featured projects, and contact information.
 
-**Live:** [oleh-sunytsia.github.io/portfolio](https://oleh-sunytsia.github.io/portfolio) *(update with your URL)*
+**Live:** [benatti-dev.github.io/portfolio](https://benatti-dev.github.io/portfolio) *(update with your URL)*
 
 ---
 
