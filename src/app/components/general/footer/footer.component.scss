@@ -1,0 +1,121 @@
+@import "./../../../../variables.scss";
+
+$CodeKeyword: #cc7832;
+$CodeClass: #e06c75;
+$CodeMethod: #61afef;
+
+footer {
+    color: $LightSlate;
+    padding-bottom: 20px;
+    position: relative;
+
+    .footer-left-bar, .footer-right-bar {
+        &:hover {
+            &:after {
+                background-color: $Green;
+                height: 110px;
+            }
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 90px;
+            margin: 0 auto;
+            background-color: $LightSlate;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+    }
+
+    .footer-left-bar li {
+        list-style: none;
+    }
+
+    .footer-left-bar {
+        position: fixed;
+        bottom: -16px;
+        left: 51px;
+        padding: 0;
+        z-index: 10;
+
+        i {
+            font-size: 19px;
+            color: $LightSlate;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        li {
+            margin: 20px 0px;
+
+            &:last-of-type {
+                margin-bottom: 33px;
+            }
+
+            &:hover i {
+                color: $Green;
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+    .footer-right-bar {
+        position: fixed;
+        bottom: 0px;
+        right: 41px;
+        padding: 0;
+        z-index: 10;
+
+        a {
+            font-family: $CodeFont;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            writing-mode: vertical-rl;
+            margin: 20px auto;
+            padding: 10px;
+            color: $LightSlate;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+            // Ефект підстрибування імейлу вгору
+            &:hover {
+                color: $Green;
+                transform: translateY(-5px);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .footer-credits {
+        font-family: $CodeFont;
+        font-size: 13px;
+        padding: 40px 0 10px 0;
+        width: 100%;
+
+        .code-signature {
+            display: inline-block;
+            text-decoration: none;
+            padding: 6px 12px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            background: rgba($LightSlate, 0.03);
+
+            &:hover {
+                border-color: rgba($Green, 0.3);
+                background: rgba($Green, 0.05);
+                box-shadow: 0 4px 20px rgba($Green, 0.05);
+                transform: translateY(-2px);
+            }
+
+            .token.keyword { color: $CodeKeyword; font-weight: bold; }
+            .token.class { color: $CodeClass; }
+            .token.method { color: $CodeMethod; }
+        }
+
+        .copyright-text {
+            margin-top: 8px;
+            font-size: 11px;
+            color: rgba($LightSlate, 0.6);
+        }
+    }
+}
