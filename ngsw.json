@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1779292564264,
+  "timestamp": 1779294163129,
   "index": "/portfolio/index.html",
   "assetGroups": [
     {
@@ -111,7 +111,6 @@
         "/portfolio/assets/images/folder.svg",
         "/portfolio/assets/images/github.svg",
         "/portfolio/assets/images/isd/LIS-System.webp",
-        "/portfolio/assets/images/preview.png",
         "/portfolio/fa-brands-400.82e70052bfcc264f.eot",
         "/portfolio/fa-brands-400.978e1bac6f998a1a.woff2",
         "/portfolio/fa-brands-400.9ed39b3d244b31bf.svg",
@@ -162,7 +161,7 @@
     "/portfolio/SFMono-Semibold.849266397229adad.woff": "999e816498b39e99896d09cb18614e5bb700fa8e",
     "/portfolio/SFMono-SemiboldItalic.0ef5133ede504d56.woff2": "3621c6894388833626fd4cf132087a3f46a54a21",
     "/portfolio/SFMono-SemiboldItalic.33cb8d6968ae9130.woff": "4bb2ddc7da8064698328e123bd3ec673f674a90d",
-    "/portfolio/assets/cv/Oleh_Sunytsia_CV.pdf": "777ae565fb9b30e82ac57d895492f4876f290878",
+    "/portfolio/assets/cv/Oleh_Sunytsia_CV.pdf": "0bf363c00ea53ac58264a3074aad9223b67fb143",
     "/portfolio/assets/fonts/Calibre/Calibre-Light.ttf": "8eccfc3783b04d13dec5887a15c3e00fd28bef7c",
     "/portfolio/assets/fonts/Calibre/Calibre-Light.woff": "e3fbab74fa86b97c78ad1b1965b327fe5b2a1adb",
     "/portfolio/assets/fonts/Calibre/Calibre-Light.woff2": "70021b39a260c5f53d2ec5ba30f37163bbe0ef14",
@@ -215,7 +214,6 @@
     "/portfolio/assets/images/folder.svg": "024e52150f03c8e0f77d17979a27ae94830678be",
     "/portfolio/assets/images/github.svg": "a3f53ab5a693a028b2b703449b9f8b2fd02565c6",
     "/portfolio/assets/images/isd/LIS-System.webp": "84d78e5be22dc3d349e0af3e9e01804feca3fdaa",
-    "/portfolio/assets/images/preview.png": "e21a588bc9ed59e83b6eeaa295b72476e5d97eca",
     "/portfolio/fa-brands-400.82e70052bfcc264f.eot": "a400bc89d3cb4d45a3b90791800587a1e4ebafa6",
     "/portfolio/fa-brands-400.978e1bac6f998a1a.woff2": "fce0da592a3e536d6d5df5b50cb513398d8c5161",
     "/portfolio/fa-brands-400.9ed39b3d244b31bf.svg": "24aff44d36f6c4a6a08230474b546b29641c75d6",
