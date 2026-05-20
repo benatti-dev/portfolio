@@ -8,11 +8,17 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 })
 export class AboutComponent implements OnInit {
 
+  imgError = false;
+
   constructor(
     public analyticsService: AnalyticsService
   ) { }
 
   ngOnInit(): void {
+  }
+
+  onImgError(): void {
+    this.imgError = true;
   }
 
 }
