@@ -60,7 +60,7 @@
       ]
     }
   ],
-  "OtherProjects.Title": "More personal projects",
+  "OtherProjects.Title": "Personal projects",
   "OtherProjects.Projects": [
     {
       "Title": "Spring Auth Starter",
@@ -85,11 +85,25 @@
       ]
     },
     {
-      "Title": "Placeholder",
-      "Description": "",
-      "ghLink": "https://github.com/benatti-dev",
-      "demoLink": "",
-      "Technologies": []
+      "Title": "Booker",
+      "Description": "A multi-tenant SaaS marketplace for service-based businesses. Features geo-proximity search with PostGIS, conflict-safe booking via PostgreSQL advisory locks, dynamic service attributes with JSONB validation, JWT + RBAC auth, real-time WebSocket notifications, and a modular Spring Boot backend paired with an Angular 17 / NgRx SPA.",
+      "ghLink": "https://github.com/benatti-dev/booking-ecosystem",
+      "imgs": [
+        "assets/images/booker/dashboard.png",
+        "assets/images/booker/search.png",
+        "assets/images/booker/booking.png",
+        "assets/images/booker/admin.png"
+      ],
+      "Technologies": [
+        "Java",
+        "Spring Boot",
+        "Angular",
+        "PostgreSQL",
+        "PostGIS",
+        "NgRx",
+        "Docker",
+        "TypeScript"
+      ]
     }
   ],
   "Contact.Pretitle": "What’s Next",

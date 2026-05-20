@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 
 @Component({
@@ -8,6 +9,17 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
   styleUrls: ['./more-projects.component.scss']
 })
 export class MoreprojectsComponent implements OnInit {
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    navSpeed: 700,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000
+  };
 
   constructor(
     private router: Router,

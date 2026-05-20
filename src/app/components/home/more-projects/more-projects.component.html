@@ -6,44 +6,91 @@
                     <span class='n-section-title'>04.</span> {{"OtherProjects.Title" | translate}}
                 </h3>
             </div>
-            <div class="mt-5">
-                <div class="row p-0">
 
-                    <div *ngFor='let project of "OtherProjects.Projects" | translate; let i = index'
-                        (click)="redirect(project['demoLink'], $event)"
-                        class="col-12 col-md-6 col-lg-6 col-xl-4 proyect-col" data-aos="fade-up"
-                        data-aos-duration="1000">
-                        <div class="more-proyect-box">
-                            <div class="row w-100 text-left m-0 p-0">
-                                <div class="col-6 p-0">
-                                    <img src='assets/images/folder.svg' width="40">
+            <!-- Featured-style layout for projects with images -->
+            <ng-container *ngFor="let project of 'OtherProjects.Projects' | translate; let i = index">
+                <div *ngIf="project['imgs'] && project['imgs'].length > 0"
+                    class="d-flex proyect-container" data-aos="fade-up" data-aos-duration="1000">
+
+                    <owl-carousel-o class="owl-carousel-o" [options]="customOptions"
+                        [style.order]="i%2==0 ? 0 : 1">
+                        <ng-container *ngFor="let img of project['imgs']">
+                            <ng-template carouselSlide [id]="project.Title + 'slide' + i">
+                                <div class="img-container">
+                                    <img class="img-feature-proyect rounded" [src]="img" [alt]="project.Title">
                                 </div>
-                                <div class="col-6 d-flex p-0 justify-content-end">
-                                    <a *ngIf="project['demoLink']"
-                                        (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_external_link", "projects", "click")'
-                                        style='color: inherit' [href]="project['demoLink']" target="_blank"><i
-                                            id="demoLink" class="ml-3 fas fa-external-link-alt"></i></a>
-                                    <a *ngIf="project['ghLink']"
-                                        (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_github", "projects", "click")'
-                                        style='color: inherit' [href]="project['ghLink']" target="_blank"><i id="ghLink"
-                                            class="ml-4 fab fa-github"></i></a>
-                                </div>
-                                <h5 class="other-proyect-title mt-4">{{project.Title}}</h5>
-                                <p class="other-proyect-description">
-                                    {{project.Description}}
-                                </p>
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
+
+                    <div [class.proyect-info-right]="i%2==0" [class.proyect-info-left]="i%2!=0"
+                        [style.order]="i%2==0 ? 1 : 0" class="h-100">
+                        <div class="proyect-box">
+                            <h4 [class.text-right]="i%2==0" [class.text-left]="i%2!=0" class="feature-proyect">
+                                Personal Project</h4>
+                            <h5 [class.text-right]="i%2==0" [class.text-left]="i%2!=0" class="proyect-name">
+                                {{project.Title}}</h5>
+                            <div class="proyect-description-box">
+                                <p class="mb-0" [innerHTML]="project.Description"></p>
                             </div>
-                            <div>
-                                <ul class="more-projects-skills">
-                                    <li *ngFor='let technology of project.Technologies'>
-                                        <span class="underline">{{technology}}</span>
-                                    </li>
-                                </ul>
+                            <ul [class.justify-content-end]="i%2==0" [class.justify-content-start]="i%2!=0"
+                                class="proyect-skills">
+                                <li *ngFor="let technology of project.Technologies" class="ml-3">
+                                    <span class="underline technology">{{technology}}</span>
+                                </li>
+                            </ul>
+                            <div [class.text-right]="i%2==0" [class.text-left]="i%2!=0" class="proyect-links">
+                                <a *ngIf="project['ghLink']" style="color: inherit" [href]="project['ghLink']"
+                                    target="_blank"><i class="ml-3 fab fa-github"></i></a>
+                                <a *ngIf="project['demoLink']" style="color: inherit" [href]="project['demoLink']"
+                                    target="_blank"><i class="ml-3 fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </ng-container>
+
+            <!-- Grid cards for projects without images -->
+            <div class="mt-5">
+                <div class="row p-0">
+                    <ng-container *ngFor="let project of 'OtherProjects.Projects' | translate">
+                        <div *ngIf="!project['imgs'] || project['imgs'].length === 0"
+                            (click)="redirect(project['demoLink'], $event)"
+                            class="col-12 col-md-6 col-lg-6 col-xl-4 proyect-col" data-aos="fade-up"
+                            data-aos-duration="1000">
+                            <div class="more-proyect-box">
+                                <div class="row w-100 text-left m-0 p-0">
+                                    <div class="col-6 p-0">
+                                        <img src='assets/images/folder.svg' width="40">
+                                    </div>
+                                    <div class="col-6 d-flex p-0 justify-content-end">
+                                        <a *ngIf="project['demoLink']"
+                                            (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_external_link", "projects", "click")'
+                                            style='color: inherit' [href]="project['demoLink']" target="_blank"><i
+                                                id="demoLink" class="ml-3 fas fa-external-link-alt"></i></a>
+                                        <a *ngIf="project['ghLink']"
+                                            (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_github", "projects", "click")'
+                                            style='color: inherit' [href]="project['ghLink']" target="_blank"><i
+                                                id="ghLink" class="ml-4 fab fa-github"></i></a>
+                                    </div>
+                                    <h5 class="other-proyect-title mt-4">{{project.Title}}</h5>
+                                    <p class="other-proyect-description">
+                                        {{project.Description}}
+                                    </p>
+                                </div>
+                                <div>
+                                    <ul class="more-projects-skills">
+                                        <li *ngFor='let technology of project.Technologies'>
+                                            <span class="underline">{{technology}}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
